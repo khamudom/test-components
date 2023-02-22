@@ -1,6 +1,10 @@
 {
-    "name": "ivs-components",
-    "version": "0.0.1",
+    "name": "ku-components",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/khamudom/test-components"
+    },
+    "version": "0.0.2",
     "description": "For testing - Interactive streaming component library for React",
     "main": "dist/cjs/index.js",
     "module": "dist/esm/index.js",
