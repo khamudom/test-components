@@ -1,0 +1,29 @@
+{
+    "name": "ivs-components",
+    "version": "0.0.1",
+    "description": "For testing - Interactive streaming component library for React",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rm -rf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
+        "build:esm": "tsc",
+        "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+    },
+    "author": "Kham Udom",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^18.14.0",
+        "@types/react": "^18.0.28",
+        "@types/react-dom": "^18.0.11",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "typescript": "^4.9.5"
+    },
+    "peerDependencies": {
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    }
+}
